@@ -1,0 +1,159 @@
+# 三、sublime Text3 教程
+
+## 1、修改安装插件的位置
+
+1. 安装完sublime text3，在第一次运行的时候，sublime text3 会在%appdata%目录下生成一个Sublime Text 3的文件夹，用于存放配置文件，以及后面安装的各种插件(所以第一次打开sublime text3时会比较慢)
+
+点击查看原图
+
+要做的第一件事情就是把这个文件移动安装目录，便于设置完后打包。
+
+* 第一步：安装完sublime text3后，不要直接运行。
+
+    找到sublime text3的安装目录，并在该目录下新建 Data 文件夹(注意大小写)。如果已经运行了，请先在地址栏输入 %appdata%  然后删除该目录下的sublime text3文件夹。
+	
+	完成这一步之后再打开sublime text3所有的配置文件都会被生成在Data文件夹中了
+
+点击查看原图
+
+* 第二步：安装你需要的插件
+    这就没什么好说的了，还是默认的安装方式。安装后的插件可以在sublime text3安装目录下的 Data/Packages下找到。
+
+* 第三步：打包sublime text3文件夹
+    打包的文件就可以在其他电脑上直接使用了。
+
+## 2、注册
+
+1. 生成的密钥
+
+	密钥
+	
+		----- BEGIN LICENSE -----
+		Andrew Weber
+		Single User License
+		EA7E-855605
+		813A03DD 5E4AD9E6 6C0EEB94 BC99798F
+		942194A6 02396E98 E62C9979 4BB979FE
+		91424C9D A45400BF F6747D88 2FB88078
+		90F5CC94 1CDC92DC 8457107A F151657B
+		1D22E383 A997F016 42397640 33F41CFC
+		E1D0AE85 A0BBD039 0E9C8D55 E1B89D5D
+		5CDB7036 E56DE1C0 EFCC0840 650CD3A6
+		B98FC99C 8FAC73EE D2B95564 DF450523
+		------ END LICENSE ------
+
+## 3、汉化
+
+## 4、配置
+
+1. 点击preferences－setting user，个人设置如下：
+
+		{
+		//字体大小
+		"font_size": 13.0,
+		//字体类型
+		"font_face": "Consolas",
+		// 设置每一行到顶部，以像素为单位的间距，效果相当于行距
+		"line_padding_top": 2,
+		// 设置每一行到底部，以像素为单位的间距，效果相当于行距
+		"line_padding_bottom": 2,
+		// html和xml下突出显示光标所在标签的两端，影响HTML、XML、CSS等
+		"match_tags": true,    
+		// 是否显示代码折叠按钮
+		"fold_buttons": true,
+		// 代码提示
+		"auto_complete": true,
+		// 默认编码格式
+		"default_encoding": "UTF-8",
+		// 左边边栏文件夹动画
+		"tree_animation_enabled": true,
+		//删除你想要忽略的插件
+		"ignored_packages":
+			[
+			"Vintage",
+			"YUI Compressor"
+			]
+		}
+
+## 5、装插件
+
+1. 插件的安装方法有两个：直接安装和插件管理安装。
+
+    1. 直接安装，将下载的安装包解压缩到Packages目录（菜单->preferences>packages）；
+
+	2. Package Control组件安装。用Package Control安装插件的方法：
+	
+　　　按下Ctrl+Shift+P调出命令面板，输入install， 调出 Install Package 选项并回车，然后在列表中选中要安装的插件。
+
+　　　有的网络环境可能会不允许访问陌生的网络环境从而设置防火墙，而Sublime Text 貌似无法设置代理，可能就获取不到安装包列表了。
+
+2. 常用插件
+
+	1. **Package Control（安装包控制）**
+	
+		1. 打开Sublime Text ，按快捷键 ctrl+` 或者点击 Tools → Command Palette 调出控制台Console；将以下代码复制粘贴进命令行后回车：
+		
+			import urllib2,os;
+			pf='Package Control.sublime-package';
+			ipp=sublime.installed_packages_path();
+			os.makedirs(ipp)ifnot os.path.exists(ipp)elseNone;
+			open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
+
+			重新启动Sublime Text 3，如果在Preferences → Package Settings 中看到 Package Control 这一项，说明安装成功。
+
+	2. **Alignment（代码补齐）**　下载：https://github.com/wbond/sublime_alignment
+	
+	3. **ColorPicker（调色盘）**　下载：https://github.com/weslly/ColorPicker
+
+		在编辑CSS样式的时候，ColorPicker可以让sublime text 内置一个调色盘，调好颜色，点击OK就会在光标处生成十六进制颜色代码。
+
+		ColorPicker界面见[图一](#ss)
+		![PackageControl]
+
+
+	4. **Zen Coding（现已改名为Emmet）**　下载：https://github.com/sergeche/emmet-sublime
+
+		1. 使用仿CSS选择器的语法来快速开发HTML和CSS，Zen Coding由两个核心组件组成：一个缩写扩展器(缩写为像CSS一样的选择器)和上下文无关的HTML标签对匹配器。
+　　
+		2. 使用ZenCoding编写代码时，需要遵循一定的缩写规则：
+
+			* E元素名（div、p）；
+			* E#id带Id的元素（div#content、p#intro、span#error）；
+			* E.class带class的的元素（div.header、p.error）,id和class可以连着写，div#content.column
+			* E>N子元素（div>p、div#footer>p>span）
+			* E*N多项元素（ul#nav>li*5>a）
+			* E+N多项元素
+			* E$*N带序号的元素
+
+	5. **SublimeTmpl（自定义新建文件）**　下载：https://github.com/kairyou/SublimeTmpl
+
+		默认已经添加了html、css、js等常见类型的面板，按ctrl+alt+h/ctrl+alt+c/ctrl+alt+j可新建这 3钟类型的文件，快捷键在这里\Packages\SublimeTmpl\Default (Windows).sublime-keymap, 模板文件在这里\Packages\SublimeTmpl\templates，可修改。
+
+	6. **其他插件**：
+
+		* **Clipboard-history（粘贴板历史记录）**　下载：https://github.com/kemayo/sublime-text-2-clipboard-history 
+		* **CSScomb（CSS属性排序）**　下载：https://github.com/csscomb/CSScomb-for-Sublime
+		* **Gits（集成 GitHub）**　下载：https://github.com/kemayo/sublime-text-git
+		* **Hex-to-HSL-Color Hex（颜色模式转HSL颜色模式）**  下载：https://github.com/atadams/Hex-to-HSL-Color
+		* **HtmlTidy（清理与排版你的HTML代码）** 　下载：https://github.com/welovewordpress/SublimeHtmlTidy
+		* **JsFormat（javascript格式化）**　下载：https://github.com/jdc0589/JsFormat
+		* **PHPTidy（整理与排版PHP代码）**　下载：https://github.com/welovewordpress/SublimePhpTidy
+		* **SideBarEnhancements（侧边栏增强）**　下载：https://github.com/titoBouzout/SideBarEnhancements
+		* **SublimeLinter（代码错误提示）**　下载：https://github.com/SublimeLinter/SublimeLinter/tree/sublime-text-3
+		* **SFTP（编辑 FTP 或 SFTP 服务器上的文件）**　下载：http://wbond.net/sublime_packages/sftp   
+		* **Tradsim（中文繁字体和简体字转换）**　下载：https://github.com/erinata/SublimeTradsim
+		* **TrailingSpacer（高亮显示多余的空格和Tab）**　下载：https://github.com/SublimeText/TrailingSpaces 
+		* **YUI Compressor（压缩JS和CSS文件）**　下载：https://github.com/kairyou/SublimeYUICompressor
+
+
+***
+> 参考资料
+>>http://www.imjeff.cn/blog/146/
+
+>>http://blog.csdn.net/idxuanjun/article/details/13292847
+
+>>http://my.oschina.net/theforever/blog/136554
+
+
+[PackageControl]: PackageControl.png "ColorPicker界面见"
+
