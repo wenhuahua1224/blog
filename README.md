@@ -29,9 +29,9 @@
 
 
 [link_tech_1]:https://github.com/star45/blog/blob/master/blogTech/SublimeText3/1_ST3引入.md  "关于Sublime Text 引入介绍" 
-[link_tech_1]:https://github.com/star45/blog/blob/master/blogTech/SublimeText3/2_ST3介绍.md  "关于Sublime Text 3 自身介绍" 
-[link_tech_1]:https://github.com/star45/blog/blob/master/blogTech/SublimeText3/3_ST3教程.md  "关于Sublime Text 3 教程介绍" 
-[link_tech_1]:https://github.com/star45/blog/blob/master/blogTech/SublimeText3/4_ST3插件.md  "关于Sublime Text 3 插件介绍" 
+[link_tech_2]:https://github.com/star45/blog/blob/master/blogTech/SublimeText3/2_ST3介绍.md  "关于Sublime Text 3 自身介绍" 
+[link_tech_3]:https://github.com/star45/blog/blob/master/blogTech/SublimeText3/3_ST3教程.md  "关于Sublime Text 3 教程介绍" 
+[link_tech_4]:https://github.com/star45/blog/blob/master/blogTech/SublimeText3/4_ST3插件.md  "关于Sublime Text 3 插件介绍" 
 
 
 [link_me_1]:http://weibo.com/starsxlk  "个人微博"
