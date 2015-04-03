@@ -1,0 +1,8 @@
+http://zengrong.net/post/1722.htm
+
+
+git整合myeclipse
+
+1、现在github上创建一个创库
+2、在本地新建项目，使用myeclipse ，share 关联git，向本地提交，
+3、远程提交 使用之前的地址 
