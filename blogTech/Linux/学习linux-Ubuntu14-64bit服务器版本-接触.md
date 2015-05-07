@@ -119,12 +119,13 @@
 		/usr/local/node/0.10.24/lib/node_modules/
 
 ### 3、安装nginx  
-
+  - [安装教程][link_tech_linux_nginx_1]
+  - [配置负载均衡][link_tech_linux_nginx_2]
 #### 3.1安装nginx
 
 
 
-
+  /usr/local/webserver/nginx/sbin/nginx                      # 启动
 	/usr/local/webserver/nginx/sbin/nginx -s reload            # 重新载入配置文件
 	/usr/local/webserver/nginx/sbin/nginx -s reopen            # 重启 Nginx
 	/usr/local/webserver/nginx/sbin/nginx -s stop              # 停止 Nginx
@@ -194,6 +195,10 @@ npm install
 
 [link_nginx_1]: http://www.w3cschool.cc/linux/nginx-install-setup.html "nginx安装教程"
 [link_nginx_2]: http://blog.csdn.net/shirdrn/article/details/6845520 "nginx与tomcat负载配置"
+
+
+[link_tech_linux_nginx_1]:https://github.com/star45/blog/blob/master/blogTech/Linux/nginx一学习之Nginx安装.md "nginx安装教程"
+[link_tech_linux_nginx_2]:https://github.com/star45/blog/blob/master/blogTech/Linux/nginx一学习之Nginx实现Tomcat集群负载均衡.md "Nginx实现Tomcat集群负载均衡教程"
 
 
 

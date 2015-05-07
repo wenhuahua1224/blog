@@ -37,7 +37,7 @@
 [link_tech_4]:https://github.com/star45/blog/blob/master/blogTech/SublimeText3/4_ST3插件.md  "关于Sublime Text 3 插件介绍" 
 
 
-[link_tech_linux_1]:https://github.com/star45/blog/blob/master/blogTech/Linux/学习linux-Ubuntu14-64bit服务器版本-接触.md  "关于Sublime Text 3 教程介绍"
+[link_tech_linux_1]:https://github.com/star45/blog/blob/master/blogTech/Linux/学习linux-Ubuntu14-64bit服务器版本-接触.md  "关于Ubuntu14-34bit的使用"
 
 [link_me_1]:http://weibo.com/starsxlk  "个人微博"
 [link_me_2]:http://blog.csdn.net/yangwangxlk  "个人博客"
