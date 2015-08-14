@@ -187,7 +187,16 @@ npm install
     
 			./bin/startup.sh
 
+安装mongodb：
 
+wget http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-2.0.4.tgz
+tar xzf mongodb-linux-i686-2.0.1.tgz
+rsync -a bin /usr/local/mongodb
+mkdir data
+touch dblogs
+
+启动：
+./mongod --dbpath=/usr/local/mongodb3/data/ --logpath=/usr/local/mongodb3/dblogs --fork
 
 
 [link_redis_1]: http://www.w3cschool.cc/redis/redis-install.html "redis安装教程"
