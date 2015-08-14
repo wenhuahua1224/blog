@@ -1,0 +1,11 @@
+﻿
+* [第一章-安装](basic/README.md)
+ - [第1节-Chrome安装](basic/Chromeinstall.md)
+ - [第2节-Chrome应用安装](basic/webstoreinstall.md)
+ - [第3节-Chrome翻墙](basic/fq.md)
+ - [第4节-扩展(插件)和应用(app)的区别](basic/extVSapp.md)
+* [第二章-Chrome插件](webstore/README.md)
+ - [第1节-基本插件](webstore/basic.md)
+   - [1-infinity](webstore/basic.md)
+   - [2-有道云笔记](webstore/basic.md)
+* [第三章-结束](end/README.md)

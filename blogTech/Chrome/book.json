@@ -1,0 +1,21 @@
+{
+    "gitbook": ">=2.0.0",
+    "title": "优雅的使用Chrome",
+    "links": {
+        "gitbook": false,
+        "sharing": {
+            "google": false,
+            "facebook": false,
+            "twitter": false,
+            "all": false
+        }
+    },
+    "plugins": [
+        "disqus"
+    ],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "Chrome"
+        }
+    }
+}
