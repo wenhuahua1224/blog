@@ -14,6 +14,11 @@
 
 1. [Ubuntu14-64bit初学心得][link_tech_linux_1]
 
+## 关于面试
+
+1. [对于SSH的理解][link_job_ssh]
+
+
 ## 关于文章
 
 [查看][link_me_2]
@@ -35,6 +40,8 @@
 [link_tech_2]:https://github.com/star45/blog/blob/master/blogTech/SublimeText3/2_ST3介绍.md  "关于Sublime Text 3 自身介绍" 
 [link_tech_3]:https://github.com/star45/blog/blob/master/blogTech/SublimeText3/3_ST3教程.md  "关于Sublime Text 3 教程介绍" 
 [link_tech_4]:https://github.com/star45/blog/blob/master/blogTech/SublimeText3/4_ST3插件.md  "关于Sublime Text 3 插件介绍" 
+
+[link_job_ssh]:https://github.com/star45/blog/blob/master/blogTech/Job/ssh.md  "关于工作中的ssh的认识" 
 
 
 [link_tech_linux_1]:https://github.com/star45/blog/blob/master/blogTech/Linux/学习linux-Ubuntu14-64bit服务器版本-接触.md  "关于Ubuntu14-34bit的使用"
